@@ -40,7 +40,7 @@ curl -u "$USER:$PASS" -i -X POST -d '{"name": "priority: 3 (should)", "color": "
 curl -u "$USER:$PASS" -i -X POST -d '{"name": "priority: 4 (must)", "color": "000000"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
 
 ## Resolutions
-curl -u "$USER:$PASS" -i -X POST -d '{"name": "resolution: can't reproduce", "color": "bfdadc"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u "$USER:$PASS" -i -X POST -d '{"name": "resolution: can\'t reproduce", "color": "bfdadc"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
 curl -u "$USER:$PASS" -i -X POST -d '{"name": "resolution: duplicate issue", "color": "bfdadc"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
 curl -u "$USER:$PASS" -i -X POST -d '{"name": "resolution: bug fixed", "color": "bfdadc"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
 curl -u "$USER:$PASS" -i -X POST -d '{"name": "resolution: invalid", "color": "bfdadc"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
